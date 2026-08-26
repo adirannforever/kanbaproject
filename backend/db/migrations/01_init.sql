@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS tasks (
     user_id VARCHAR(100) NOT NULL
 );
 
-CREATE INDEX IF NOT EXIST idx_tasks_user_status ON tasks (user_id, status)
+CREATE INDEX IF NOT EXIST idx_tasks_user_status ON tasks (user_id, status);
