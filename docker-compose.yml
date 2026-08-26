@@ -83,17 +83,17 @@ services:
     deploy:
       replicas: 2 
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.frontend.rule=PathPrefix(`/`)" 
-      - "traefik.http.routers.frontend.entrypoints=websecure"
-      - "traefik.http.routers.frontend.tls.certresolver=myresolver"
-    networks:
-      - kanban_net
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   labels:
+  #     - "traefik.enable=true"
+  #     - "traefik.http.routers.frontend.rule=PathPrefix(`/`)" 
+  #     - "traefik.http.routers.frontend.entrypoints=websecure"
+  #     - "traefik.http.routers.frontend.tls.certresolver=myresolver"
+  #   networks:
+  #     - kanban_net
 
 networks:
   kanban_net:
