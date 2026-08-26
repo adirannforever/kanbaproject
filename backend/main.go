@@ -11,6 +11,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/websocket/v2"
+	_ "github.com/lib/pq"
 	"github.com/nats-io/nats.go"
 	"github.com/redis/go-redis/v9"
 )
