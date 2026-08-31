@@ -82,6 +82,7 @@ services:
       - kanban_net
     deploy:
       replicas: 2 
+ 
 
   # frontend:
   #   build:
